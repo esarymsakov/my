@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&family=Reem+Kufi+Fun:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+
+/*   Base   */
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+section {
+    padding: 50px;
+}
+
+a {
+    text-decoration: none;
+    appearance: unset;
+    color: ghostwhite;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+    color: rgb(209, 49, 28);
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 0.9em;
+    color:rgb(24, 24, 24);
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    color:rgb(24, 24, 24);
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: normal;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+/*   Header  */
+
+.header {
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box {
+    padding: 0 50px;
+}
+
+.logo-link {
+    cursor:default;
+}
+
+.logo-box::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: ghostwhite;
+    border-radius: 100%;
+    position: absolute;
+    top: 30px;
+    left: 221px;
+}
+
+.logo-a, .logo-b {
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: ghostwhite;
+}
+
+.nav-box ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+.nav-box ul li a {
+    font-size: 20px;
+}
+
+.nav-box ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-box {
+    padding: 0 50px;
+}
+
+/*   Section 1   */
+
+.projects-section-wrapper {
+    margin-top: 200px;
+}
+
+#welcome {
+    margin-top: 50px;
+    
+}
+
+#projects {
+    position: relative;
+    margin-top: 100px;
+}
+
+.span-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 450px;
+    font-weight: 600;
+    line-height: 0.6em;
+    color:rgba(37, 37, 37, 0.096);
+    margin: 0;
+}
+
+.span-title-section {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 250px;
+    font-weight: 600;
+    line-height: 0.6em;
+    color:rgba(37, 37, 37, 0.096);
+    margin: 0;
+}
+
+.text-decor-section {
+    position: absolute;
+    z-index: -1;
+}
+
+.first-spanTitle {
+    top: 13px;
+    right: -13%;
+}
+
+.welcome-section-wrap {
+    position: relative;
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    top: 10px;
+    left: 0;
+    
+    /* background-color: rgb(29, 29, 29); */
+}
+
+.img-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.img-box img {
+    width: 500px;
+    height: auto;
+    filter: grayscale(100%);
+    -webkit-mask: linear-gradient(
+        to top,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,1) 110%
+    );
+}
+
+.title-section {
+    position: absolute;
+    top: 78px;
+    left: 0;
+}
+
+.icon-style {
+    font-size: 25px;
+    color:rgb(14, 14, 14);
+}
+
+.icon-style:hover {
+    font-size: 25px;
+    color: rgb(209, 49, 28);
+}
+
+.angle {
+    position: relative;
+    bottom: 0;
+}
+
+.icon-code-style {
+    font-size: 21em;
+    color:rgba(110, 110, 110, 0.205);
+}
+
+.code-icon {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    z-index: -1;
+}
+
+/*   Section 2   */
+
+#about-me {
+    position: relative;
+}
+
+.second-section-spanTitle {
+    top: 0%;
+    left: 1%;
+}
+
+.dot-icon {
+    position: absolute;
+    bottom: 20%;
+    right: -12%;
+}
+
+.dot-icon i {
+    font-size: 200px;
+    color:rgba(37, 37, 37, 0.096);
+}
+
+/*   Project Cards   */
+
+.project-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    border-left: 3px solid rgb(37, 37, 37);
+    margin: 25px 0;
+}
+
+.project-card:hover {
+    background: rgba(110, 110, 110, 0.205);
+    transition: 0.3s;
+}
+
+.img-card {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.used-lang-icons i {
+    margin: 0 5px;
+}
+
+/* .back-color {
+    background:rgb(36, 36, 36);
+} */
+
+.redirect-link-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #3253E8;
+    margin-left: 20px;
+}
+
+#header-card {
+    display: flex;
+    align-items: center;
+}
+
+#header-card h2 {
+    margin: 7px 0;
+}
+
+.redirect-link-style p {
+    font-size: 25px;
+}
+
+.background-card {
+    background-color: rgba(155, 155, 155, 0.178);
+}
+
+/*   Section 3  /  About Me   */
+
+#about-me {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+
+.aboutMe-section-wrapper {
+    width: 50%;
+}
+
+.third-section-spanTitle {
+    top: -35%;
+    left: 2%;
+}
+
+#img-dot {
+    width: 400px;
+    height: auto;
+    margin-right: 22px;
+}
+
+.image-dot {
+    opacity: 90%;
+}
+
+/*   Setcion 4  /  CV   */
+
+#cv {
+    position: relative;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cv-section-wrapper {
+    padding: 40px;
+    width: 50%;
+    background: rgba(110, 110, 110, 0.336);
+}
+
+.cv-section {
+    margin: 25px 0;
+}
+
+.cv-section p {
+    margin: 15px 0;
+}
+
+.cv-section p b a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    line-height: normal;
+    font-weight: 600;
+    margin: 5px 0;
+    color: unset;
+}
+
+.cv-section p b a:hover {
+    color: rgb(209, 49, 28);
+}
+
+.fourth-section-spanTitle {
+    top: 50%;
+    right: 12%;
+}
+
+.cv-header {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.date-cv {
+    font-size: 0.75em;
+}
+
+/*   Footer   */
+
+footer {
+    margin-top: 200px;
+    background-color: rgb(14, 14, 14);
+    color: ghostwhite;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+
+.contact-form div form input {
+    border: 0;
+    height: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+#btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 00.75em;
+    padding: 5px;
+    margin: 15px 0;
+    background-color: ghostwhite;
+    border: none;
+}
+
+#btn:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.2);
+    transition: 0.1s;
+}
+
+.footer-header {
+    color: ghostwhite;
+}
+
+.contact-form div form label {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: ghostwhite;
+    margin: 10px 0;
+}
+
+textarea {
+    resize: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.contact-wrapper {
+    position: relative;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-box {
+    width: 100%;
+    display: flex;
+    
+}
+
+#footer-section {
+    
+    padding: 50px;
+}
+
+/* Contacts */
+
+.contacts-box ul li {
+    list-style: none;
+    margin: 18px 0;
+}
+
+.contacts-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-box ul li i {
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.contacts-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 70px;
+}
+
+@media (min-width: 320px) and (max-width: 767.85px) {
+
+    h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 2.5em;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    /*    header    */
+
+    .nav-box {
+        display: none;
+    }
+
+    .logo-box {
+        padding: 0;
+        padding-left: 25px;
+    }
+
+    .logo-box::after {
+        top: 30px;
+        left: 196px;
+    }
+
+    .header {
+        height: 45px;
+        position: unset;
+    }
+
+    /*   Title Text    */
+
+    .span-title {
+        font-size: 15em;
+    }
+
+    .span-title-section {
+        font-size: 3.7em;
+    }
+
+    /*    First Section    */
+
+    #welcome {
+        margin-top: unset;
+    }
+
+    .first-spanTitle {
+        right: 0;
+    }
+
+    .text-decor-section {
+        z-index: -2;
+    }
+
+    .img-box {
+        right: unset;
+        z-index: -1;
+    }
+
+    .img-box img {
+        width: 350px;
+    }
+
+    .title-section {
+        top: 55%;
+    }
+
+    /*    Second Section -- Projects    */
+
+    .second-section-spanTitle {
+        top: unset;
+        left: unset;
+    }
+
+    .projects-section-wrapper {
+        margin-top: 0;
+    }
+
+    .img-card {
+        width: 115px;
+    }
+
+    .project-card {
+        width: unset;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .background-card {
+        background-color: unset;
+    }
+
+    /*    Third Section -- About Me    */
+
+    #about-me {
+        margin-top: 80px;
+        flex-direction: column-reverse;
+    }
+
+    .third-section-spanTitle {
+        top: 0;
+        left: auto;
+    }
+
+    .aboutMe-section-wrapper {
+        width: unset;
+    }
+
+    #img-dot {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .image-dot {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    /*    Fourth Section -- CV    */
+
+    #cv {
+        margin-top: 80px;
+    }
+
+    .fourth-section-spanTitle {
+        top: -1.6%;
+        right: auto;
+    }
+
+    .cv-section-wrapper {
+        width: unset;
+        padding: 20px;
+    }
+
+    .cv-section p b a {
+        color:rgb(49, 30, 224);
+    }
+
+    /*    Footer    */
+
+    #footer-section {
+        padding: 25px;
+    }
+
+    .footer-box {
+        flex-direction: column;
+    }
+
+    .contacts-box {
+        width: unset;
+    }
+
+    .contact-form {
+        display: block;
+        width: unset;
+        max-width: 100%;
+    }
+}
