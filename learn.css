@@ -513,6 +513,50 @@ textarea {
     color: red;
 }
 
+/*       Thanks Page        */
+
+.thanks-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.thanks-span {
+    position: relative;
+    font-size: 8em;
+    color: rgb(14, 14, 14);
+    margin: 25px;
+    border: 3px solid black;
+    padding: 35px;
+}
+
+.thanks-span::before {
+    content: "";
+    background-color: rgb(14, 14, 14);
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.thanks-box p {
+    margin: 25px 0;
+}
+
+.thanks-box a {
+    color: rgb(14, 14, 14);
+    text-decoration: underline;
+}
+
+.thanks-box a:hover {
+    color: rgb(209, 49, 28);
+}
+
 @media (min-width: 320px) and (max-width: 767.85px) {
 
     html {
@@ -540,7 +584,7 @@ textarea {
     }
 
     .logo-box::after {
-        top: 3.9%;
+        top: 3.5%;
         left: 196px;
     }
 
@@ -669,7 +713,7 @@ textarea {
     }
 
     .contacts-box {
-        width: unset;
+        width: 100%;
     }
 
     .contact-wrapper {
@@ -684,5 +728,13 @@ textarea {
         display: block;
         width: unset;
         max-width: 100%;
+    }
+
+        /*       Thanks Page        */
+
+    .thanks-span {
+        font-size: 5em;
+        text-align: center;
+        line-height: 80px;
     }
 }
