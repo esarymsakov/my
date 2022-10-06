@@ -416,6 +416,7 @@ footer p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.8em;
     padding: 5px;
+    border-radius: 0;
 
 }
 
@@ -426,6 +427,7 @@ footer p {
     margin: 15px 0;
     background-color: ghostwhite;
     border: none;
+    color:rgb(14, 14, 14);
 }
 
 #btn:hover {
@@ -451,6 +453,8 @@ textarea {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 0.8em;
     padding: 5px;
+    border: 0;
+    border-radius: 0;
 }
 
 .contact-wrapper {
@@ -472,6 +476,7 @@ textarea {
 .footer-box {
     width: 100%;
     display: flex;
+    align-items: center;
     
 }
 
@@ -504,7 +509,15 @@ textarea {
     margin-top: 70px;
 }
 
+.required-star {
+    color: red;
+}
+
 @media (min-width: 320px) and (max-width: 767.85px) {
+
+    html {
+        font-size: 19px;
+    }
 
     h1 {
         font-family: 'Source Sans Pro', sans-serif;
@@ -527,7 +540,7 @@ textarea {
     }
 
     .logo-box::after {
-        top: 30px;
+        top: 3.9%;
         left: 196px;
     }
 
@@ -567,6 +580,7 @@ textarea {
 
     .img-box img {
         width: 350px;
+        max-width: 100vw;
     }
 
     .title-section {
@@ -576,7 +590,7 @@ textarea {
     /*    Second Section -- Projects    */
 
     .second-section-spanTitle {
-        top: unset;
+        top: -1%;
         left: unset;
     }
 
@@ -632,8 +646,7 @@ textarea {
     }
 
     .fourth-section-spanTitle {
-        top: -1.6%;
-        right: auto;
+        display: none;
     }
 
     .cv-section-wrapper {
@@ -657,6 +670,14 @@ textarea {
 
     .contacts-box {
         width: unset;
+    }
+
+    .contact-wrapper {
+        margin-top: 25px;
+    }
+
+    #form {
+        margin-top: 50px;
     }
 
     .contact-form {

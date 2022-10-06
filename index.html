@@ -137,6 +137,8 @@
                             <div class="used-lang-icons">
                                 <i class="fa-brands fa-html5"></i>
                                 <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-php"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure earum, cum, dolore pariatur tempore corrupti natus numquam maxime, vel alias libero error! Fugiat, suscipit. Totam doloribus sapiente excepturi optio aspernatur.</p>
                         </div>
@@ -287,12 +289,25 @@
                 <div id="contacts" class="contact-form">
                     <div class="contact-wrapper">
                         <header class="cv-header footer-header">Text Me</header>
-                        <form action="" id="form">
-                            <label for="email">Your Email</label>
+                        <form id="form" class="text-me-form">
+
+                            <label for="name"><span class="required-star">*</span>Your Name</label>
+                            <input type="text" name="name" required placeholder="John Doe">
+
+                            <label for="numbers">Your WhatsApp</label>
+                            <input type="numbers" name="whatsapp" placeholder="+996 000 XXX XXX">
+
+                            <label for="name">Your Telegram</label>
+                            <input type="text" name="telegram" placeholder="@mr_godd">
+
+                            <label for="email"><span class="required-star">*</span>Your Email</label>
                             <input type="email" name="email" required placeholder="example@example.com">
-                            <label for="email">Your Message</label>
-                            <textarea rows="5" cols="50" required name="textarea">Type here...</textarea>
-                            <button id="btn" type="submit">Submit</button>
+
+                            <label for="email"><span class="required-star">*</span>Your Message</label>
+                            <textarea rows="5" cols="50" required name="text" placeholder="Type here"></textarea>
+
+                            <button id="btn" type="submit" class="button">Submit</button>
+
                         </form>
                     </div>
                 </div>
@@ -304,5 +319,8 @@
             <p class="bottom-text">Designed by Emil Sarymsakov</p>
         </div> 
     </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./main.js"></script>
   </body>
 </html>
