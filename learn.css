@@ -73,6 +73,7 @@ p {
 
 .logo-box {
     padding: 0 50px;
+    position: relative;
 }
 
 .logo-link {
@@ -86,8 +87,7 @@ p {
     background-color: ghostwhite;
     border-radius: 100%;
     position: absolute;
-    top: 30px;
-    left: 221px;
+    bottom: 18%;
 }
 
 .logo-a, .logo-b {
@@ -596,11 +596,6 @@ textarea {
         padding-left: 25px;
     }
 
-    .logo-box::after {
-        top: 3.5%;
-        left: 196px;
-    }
-
     .header {
         height: 45px;
         position: unset;
@@ -646,7 +641,7 @@ textarea {
     }
 
     .title-section {
-        top: 60%;
+        top: 67%;
     }
 
     /*    Second Section -- Projects    */
