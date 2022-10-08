@@ -577,6 +577,10 @@ textarea {
         font-size: 2.5em;
     }
 
+    h2 {
+        font-size: 1.6em;
+    }
+
     section {
         padding: 25px;
     }
@@ -709,6 +713,14 @@ textarea {
 
     .cv-section p b a {
         color:rgb(49, 30, 224);
+    }
+
+    .redirect-link-div {
+        margin-left: 7px;
+    }
+
+    .cv-header {
+        font-size: 1.5em;
     }
 
     /*    Footer    */
