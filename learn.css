@@ -618,6 +618,10 @@ textarea {
 
     /*    First Section    */
 
+    .angle {
+        bottom: 5%;
+    }
+
     #welcome {
         margin-top: unset;
     }
@@ -632,6 +636,7 @@ textarea {
 
     .img-box {
         right: unset;
+        top: 11%;
         z-index: -1;
     }
 
@@ -641,7 +646,7 @@ textarea {
     }
 
     .title-section {
-        top: 55%;
+        top: 60%;
     }
 
     /*    Second Section -- Projects    */
